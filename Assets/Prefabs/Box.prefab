@@ -14,10 +14,10 @@ GameObject:
   - component: {fileID: 8520118076968720637}
   - component: {fileID: 5760680709143790159}
   - component: {fileID: 6779413421452352278}
-  - component: {fileID: 131713862291652352}
+  - component: {fileID: 3003189929773836931}
   m_Layer: 0
   m_Name: Box
-  m_TagString: Box
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,13 +30,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5776455997887023192}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0.46437845, z: 0, w: 0.8856369}
+  m_LocalPosition: {x: 0.248, y: 0, z: -0.127}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1.0000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 55.34, z: 0}
 --- !u!33 &3408218752866277532
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -101,7 +101,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5776455997887023192}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -162,7 +162,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.6691737, y: 0.5634841, z: 0.6833303}
   m_Center: {x: 0, y: 0.06850001, z: 0.00089389086}
---- !u!114 &131713862291652352
+--- !u!114 &3003189929773836931
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -171,10 +171,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5776455997887023192}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61158d628b266584a91ae54e0d7a8c32, type: 3}
+  m_Script: {fileID: 11500000, guid: bd11d71f233bde74a8ebe0fae98677a3, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Item
-  dropForce: 30
-  throwForce: 300
+  m_EditorClassIdentifier: Assembly-CSharp::PhotonTestTask.Box
   col: {fileID: 5760680709143790159}
   triggerCol: {fileID: 6779413421452352278}
+  _rb: {fileID: 8520118076968720637}

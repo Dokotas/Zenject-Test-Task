@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da38367979e4c824598405710a232b50, type: 3}
+  m_Name: KeymapData
+  m_EditorClassIdentifier: Assembly-CSharp::PhotonTestTask.Keymap
+  MoveForwardButton: 119
+  MoveLeftButton: 97
+  MoveBackButton: 115
+  MoveRightButton: 100
+  SprintButton: 304
+  InterractButton: 101
+  ThrowButton: 102

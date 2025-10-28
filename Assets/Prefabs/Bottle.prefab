@@ -14,10 +14,10 @@ GameObject:
   - component: {fileID: 6449883765219714620}
   - component: {fileID: 3503071445432033106}
   - component: {fileID: 7098899921812330541}
-  - component: {fileID: 6339693236776269834}
+  - component: {fileID: 8160439356852421757}
   m_Layer: 0
   m_Name: Bottle
-  m_TagString: Bottle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,7 +101,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774353718425140363}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -162,7 +162,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.6691737, y: 0.5634841, z: 0.6833303}
   m_Center: {x: 0, y: 0.06850001, z: 0.00089389086}
---- !u!114 &6339693236776269834
+--- !u!114 &8160439356852421757
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -171,10 +171,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 774353718425140363}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61158d628b266584a91ae54e0d7a8c32, type: 3}
+  m_Script: {fileID: 11500000, guid: bd11d71f233bde74a8ebe0fae98677a3, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Item
-  dropForce: 30
-  throwForce: 300
+  m_EditorClassIdentifier: Assembly-CSharp::PhotonTestTask.Bottle
   col: {fileID: 3503071445432033106}
   triggerCol: {fileID: 7098899921812330541}
+  _rb: {fileID: 6449883765219714620}
