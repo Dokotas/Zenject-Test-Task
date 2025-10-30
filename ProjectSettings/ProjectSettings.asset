@@ -524,7 +524,11 @@ PlayerSettings:
   m_BuildTargetBatching:
   - m_BuildTarget: WebGL
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_StaticBatching: 1
+=======
+    m_StaticBatching: 0
+>>>>>>> Stashed changes
 =======
     m_StaticBatching: 0
 >>>>>>> Stashed changes
