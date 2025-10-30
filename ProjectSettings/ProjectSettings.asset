@@ -523,7 +523,11 @@ PlayerSettings:
       m_SubKind: 
   m_BuildTargetBatching:
   - m_BuildTarget: WebGL
+<<<<<<< Updated upstream
     m_StaticBatching: 1
+=======
+    m_StaticBatching: 0
+>>>>>>> Stashed changes
     m_DynamicBatching: 0
   m_BuildTargetShaderSettings: []
   m_BuildTargetGraphicsJobs:
