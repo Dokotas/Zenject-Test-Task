@@ -3,7 +3,7 @@ using System;
 using UnityEngine;
 using Zenject;
 
-namespace PhotonTestTask
+namespace Market
 {
     public class PlayerAnimation : IGameFixedTickable, IInitializable, IDisposable
     {

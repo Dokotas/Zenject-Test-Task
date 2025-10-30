@@ -2,7 +2,7 @@ using GameCycle;
 using System;
 using UnityEngine;
 
-namespace PhotonTestTask
+namespace Market
 {
     public sealed class DesktopInput : IInput, IGameTickable
     {

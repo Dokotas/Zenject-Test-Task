@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace PhotonTestTask
+namespace Market
 {
     [CreateAssetMenu(fileName = "KeymapData", menuName = "Input/Keymap")]
     public sealed class Keymap : ScriptableObject

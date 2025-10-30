@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace GameCycle
 {
     public sealed class GameStateManager
     {
 
-        public GameState State { get; private set; } = GameState.RUN;
+        public GameState State { get; private set; }// = GameState.RUN;
 
         private readonly List<IGameListener> _listeners = new();
 
@@ -35,6 +36,7 @@ namespace GameCycle
             }
 
             State = GameState.RUN;
+            Debug.Log(State);
         }
 
         public void PauseGame()

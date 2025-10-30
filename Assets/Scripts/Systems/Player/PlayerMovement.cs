@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace PhotonTestTask
+namespace Market
 {
     public sealed class PlayerMovement : IMovable
     {

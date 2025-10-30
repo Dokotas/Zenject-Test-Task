@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
 
-namespace PhotonTestTask
+namespace Market
 {
     public sealed class CustomTriggerHandler<T> : IDisposable where T : MonoBehaviour
     {

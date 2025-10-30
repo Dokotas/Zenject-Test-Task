@@ -1,6 +1,6 @@
 using System;
 
-namespace PhotonTestTask
+namespace Market
 {
     public interface IActionable
     {

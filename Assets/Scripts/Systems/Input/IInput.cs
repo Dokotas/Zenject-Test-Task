@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace PhotonTestTask
+namespace Market
 {
     public interface IInput
     {

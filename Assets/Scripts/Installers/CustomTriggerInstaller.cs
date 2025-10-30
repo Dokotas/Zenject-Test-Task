@@ -1,9 +1,9 @@
-using PhotonTestTask;
+using Market;
 using Zenject;
 
 namespace Installers
 {
-    public sealed class SignalsInstaller : MonoInstaller
+    public sealed class CustomTriggerInstaller : MonoInstaller
     {
 
         public override void InstallBindings()
@@ -13,6 +13,7 @@ namespace Installers
             Container.DeclareSignal<TriggerEnteredSignal<Shelf>>();
             Container.DeclareSignal<TriggerExitedSignal<Shelf>>();
             Container.Bind<CustomTriggerHandler<Shelf>>().AsSingle().NonLazy();
+
             Container.BindInterfacesAndSelfTo<Shelf>().FromComponentsInHierarchy().AsCached();
             
 

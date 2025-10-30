@@ -1,6 +1,6 @@
 using System;
 
-namespace PhotonTestTask
+namespace Market
 {
     public sealed class PlayerActionsHandler : IDisposable
     {

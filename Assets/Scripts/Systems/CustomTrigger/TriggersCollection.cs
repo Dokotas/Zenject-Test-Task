@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace PhotonTestTask
+namespace Market
 {
     public sealed class TriggersCollection<T> : IInitializable
     {

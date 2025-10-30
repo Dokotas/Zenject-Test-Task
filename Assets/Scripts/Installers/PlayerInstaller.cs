@@ -1,6 +1,6 @@
 using UnityEngine;
 using Zenject;
-using PhotonTestTask;
+using Market;
 
 namespace Installers
 {

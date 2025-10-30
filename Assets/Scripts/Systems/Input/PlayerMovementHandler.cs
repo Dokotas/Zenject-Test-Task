@@ -2,7 +2,7 @@ using GameCycle;
 using System;
 using Zenject;
 
-namespace PhotonTestTask
+namespace Market
 {
     public sealed class PlayerMovementHandler : IInitializable, IDisposable, IGameFixedTickable
     {

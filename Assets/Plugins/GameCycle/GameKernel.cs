@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Zenject;
+using UnityEngine;
 
 namespace GameCycle
 {
@@ -34,8 +35,6 @@ namespace GameCycle
         public override void OnDestroy()
         {
             base.OnDestroy();
-
-
             _gameManager.RemoveListener(this);
         }
 

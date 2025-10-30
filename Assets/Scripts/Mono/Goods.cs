@@ -1,7 +1,7 @@
 using UnityEngine;
 using Zenject; 
 
-namespace PhotonTestTask
+namespace Market
 {
     public sealed class Goods : MonoBehaviour, ITriggerable<Goods>
     {

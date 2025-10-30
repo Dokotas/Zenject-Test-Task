@@ -1,4 +1,4 @@
-﻿namespace PhotonTestTask
+﻿namespace Market
 {
     public enum GoodsType
     {

@@ -4,7 +4,7 @@ using UnityEngine;
 using Zenject;
 using Object = UnityEngine.Object;
 
-namespace PhotonTestTask
+namespace Market
 {
     public class PoolMono<T> where T : MonoBehaviour
     {
