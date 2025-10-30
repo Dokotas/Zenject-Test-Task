@@ -5,7 +5,7 @@ using Zenject;
 
 namespace Market
 {
-    public class PlayerAnimation : IGameFixedTickable, IInitializable, IDisposable
+    public class PlayerAnimator : IGameFixedTickable, IInitializable, IDisposable
     {
         private Animator _animator;
         private IMovable _movable;
@@ -13,7 +13,7 @@ namespace Market
 
         private int _isWalkingHash, _isSprintingHash, _pickedUpHash, _droppedHash, _throwedHash;
 
-        public PlayerAnimation(Animator animator, IMovable movable, IActionable actionable)
+        public PlayerAnimator(Animator animator, IMovable movable, IActionable actionable)
         {
             _animator = animator;
             _movable = movable;
@@ -55,6 +55,11 @@ namespace Market
         {
             _animator.SetBool(_isWalkingHash, _movable.IsWalking);
             _animator.SetBool(_isSprintingHash, _movable.IsSprinting);
+        }
+
+        public void Idle()
+        {
+            _animator.SetBool(_isWalkingHash, false);
         }
 
         public void Dispose()

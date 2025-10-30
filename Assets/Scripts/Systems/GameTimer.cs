@@ -1,15 +1,18 @@
 using UnityEngine;
 using GameCycle;
 
-public class GameTimer : IGameFixedTickable
+namespace Market
 {
-    private long _ticks;
-
-    public void FixedTick()
+    public sealed class GameTimer : IGameFixedTickable
     {
-        _ticks++;
-        Debug.Log(_ticks);
-//        int time = (int)(_ticks / Time.fixedDeltaTime);
-//        Debug.Log(time);
+        private long _ticks;
+
+        public void FixedTick()
+        {
+            _ticks++;
+            Debug.Log(_ticks);
+            //        int time = (int)(_ticks / Time.fixedDeltaTime);
+            //        Debug.Log(time);
+        }
     }
 }

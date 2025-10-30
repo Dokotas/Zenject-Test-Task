@@ -25,10 +25,9 @@ namespace Installers
             Animator playerAnimator = playerGO.GetComponent<Animator>();
             PlayerHands playerHands = playerGO.GetComponent<PlayerHands>();
 
-            Container.Bind<IMovable>().To<PlayerMovement>().AsSingle().WithArguments(playerConfig, playerRb, playerTransform);
-
-            Container.BindInterfacesAndSelfTo<PlayerAnimation>().AsSingle().WithArguments(playerAnimator).NonLazy();
-
+            Container.BindInterfacesAndSelfTo<PlayerMovement>().AsSingle().WithArguments(playerConfig, playerRb, playerTransform);
+            Container.BindInterfacesAndSelfTo<PlayerAnimator>().AsSingle().WithArguments(playerAnimator).NonLazy();
+            Container.BindInterfacesAndSelfTo<PlayerAnimatorPauseHandler>().AsSingle().NonLazy();
             Container.BindInterfacesAndSelfTo<PlayerActions>().AsSingle().WithArguments(playerHands.HandsWithItem, playerTransform, playerConfig).NonLazy();
         }
 

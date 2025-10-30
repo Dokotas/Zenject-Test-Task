@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using UnityEngine;
 
 namespace GameCycle
 {
@@ -36,7 +35,6 @@ namespace GameCycle
             }
 
             State = GameState.RUN;
-            Debug.Log(State);
         }
 
         public void PauseGame()
