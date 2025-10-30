@@ -52,12 +52,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/8818634b93c98ece5fee5f553ca5bcc8.loader.js";
+      var loaderUrl = buildUrl + "/29ff44e8c74d30a7f58b0a7c0841d266.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/f0d550cc5d8761a13d8e9dad4815b70f.data",
-        frameworkUrl: buildUrl + "/efd0cbc4acf20298c0fc9173aa5b31c4.framework.js",
-        codeUrl: buildUrl + "/38ea65c712ff647a798db67642483457.wasm",
+        dataUrl: buildUrl + "/d394ecc78758bc1fd73efc7280b6e4b6.data",
+        frameworkUrl: buildUrl + "/bcc44a07bcad4cbd682dcb9b0607c794.framework.js",
+        codeUrl: buildUrl + "/2c49392e3d70a2baa68ffc632821668f.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Dokotas",
         productName: "Zenject Test Task",
@@ -121,35 +121,6 @@
                   unityInstance.SetFullscreen(1);
                 };
 
-                // Unloading web content from DOM so that browser GC can run can be tricky to get right.
-                // This code snippet shows how to correctly implement a Unity content Unload mechanism to a web page.
-
-                // Unloading Unity content enables a web page to reclaim the memory used by Unity, e.g. for
-                // the purpose of later loading another Unity content instance on the _same_ web page.
-
-                // When using this functionality, take caution to carefully make sure to clear all JavaScript code,
-                // DOM element and event handler references to the old content you may have retained, or
-                // otherwise the browser's garbage collector will be unable to reclaim the old page.
-
-                // N.b. Unity content does _not_ need to be manually unloaded when the user is navigating away from
-                // the current page to another web page. The browser will take care to clear memory of old visited
-                // pages automatically. This functionality is only needed if you want to switch between loading
-                // multiple Unity builds on a single web page.
-                var quit = document.createElement("button");
-                quit.style = "margin-left: 5px; background-color: lightgray; border: none; padding: 5px; cursor: pointer";
-                quit.innerHTML = "Unload";
-                document.querySelector("#unity-build-title").appendChild(quit);
-                quit.onclick = () => {
-                  // Quit Unity application execution
-                  unityInstance.Quit().then(() => {
-                    // Remove DOM elements from the page so GC can run
-                    document.querySelector("#unity-container").remove();
-                    canvas = null;
-                    // Remover script elements from the page so GC can run
-                    script.remove();
-                    script = null;
-                  });
-                };
               }).catch((message) => {
                 alert(message);
               });
